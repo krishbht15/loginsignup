@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    tools:context=".LoginActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color0a0a0a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build For DI"
+        android:id="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen80dp"
+
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="@dimen/dimen_48sp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/signInText"
+    android:text="Sign In with:"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:layout_below="@id/heading"
+    android:layout_marginTop="@dimen/dimen80dp"
+    android:fontFamily="sans-serif-thin"
+    android:textStyle="bold"
+    android:textSize="@dimen/dimen_20sp"
+    />
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/google_sign_up"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_marginRight="@dimen/dimen_40dp"
+        android:id="@+id/googleButton"
+        android:paddingLeft="@dimen/dimen_40dp"
+        android:paddingRight="@dimen/dimen_40dp"
+
+        android:layout_below="@id/signInText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        />
+
+</RelativeLayout>
+</layout>

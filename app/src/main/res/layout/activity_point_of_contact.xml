@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PointOfContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color0a0a0a">
+
+        <TextView
+            android:id="@+id/pointOfContactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Point of Contact"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_32sp" />
+
+        <RelativeLayout
+            android:id="@+id/firstContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pointOfContactText"
+            android:layout_marginTop="@dimen/dimen_16dp">
+
+            <TextView
+                android:id="@+id/firstContactText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="1st Contact"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_28sp" />
+
+            <TextView
+                android:id="@+id/firstNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstContactText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp"/>
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_below="@id/firstNameText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/firstPhoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEdit"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Phone Number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp"
+
+                />
+
+            <EditText
+                android:id="@+id/firstPhoneEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstPhoneText"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/firstRelationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstPhoneEdit"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Relation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <EditText
+                android:id="@+id/firstRelationEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_below="@id/firstRelationText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstContact"
+
+            android:layout_marginTop="@dimen/dimen_16dp">
+
+            <TextView
+                android:id="@+id/secondContactText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="2nd Contact"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_28sp" />
+
+            <TextView
+                android:id="@+id/secondNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondContactText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <EditText
+                android:id="@+id/secondNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondNameText"
+
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/secondPhoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondNameEdit"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Phone Number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp"
+
+                />
+
+            <EditText
+                android:id="@+id/secondPhoneEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_below="@id/secondPhoneText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/secondRelationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondPhoneEdit"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Relation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <EditText
+                android:id="@+id/secondRelationEdit"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_4dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondRelationText"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:background="@drawable/curved_outline"
+                android:textSize="@dimen/dimen_20sp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"
+            android:text="Done"
+            android:id="@+id/doneButton"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dimen_16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            />
+    </RelativeLayout>
+</layout>
